@@ -1,0 +1,83 @@
+Introduction of SQL for Software Testers
+
+Every application stores information in various data format in the back end of the system. One of the common ways of storing data is to use database. Database is a systematic collection of data. Databases support storage and manipulation of data. Software testers need to understand the following few terms below. 
+
+1. What is a Database Management System (DBMS)
+
+Database Management System (DBMS) is a collection of programs that enables users to access database, manipulate data, reporting/representation of data, and controlling access to the database. 
+
+2. Various Types of DBMS
+
+There are 4 major types of DBMS:
+
+        Hierarchical DBMS
+
+This type of DBMS represents the "parent-child" relationship of storing data. Its structure is like a tree with nodes representing records and branches representing fields. The windows registry used in Windows XP is an example of a hierarchical database. Configuration settings are stored as tree structures with nodes. A tree structure may establish one-to-many relationship. 
+
+        Network DBMS
+
+This type of DBMS supports many-to many relations. This usually results in complex database structures. The structure of a network database is extremely complicated because of these many-to-many relationship in which one record can be used as a key of entire database. 
+
+        Relational DBMS 
+
+This type of DBMS defines database relationships in form of tables, also known as relations. Unlike network DBMS, RDBMS does not support many to many relationships.Relational DBMS usually have pre-defined data types that they can support. This is the most popular DBMS type in the market. Examples of relational database management systems include MySQL, Oracle,DB2, SYBASE, MS-Access and Microsoft SQL Server.
+
+       Object Oriented Relation DBMS
+
+- this type supports storage of new data types. The data to be stored is in form of objects. The objects to be stored in the database have attributes (i.e. gender, ager) and methods that define what to do with the data. PostgreSQL is an example of an object oriented relational DBMS.
+
+3. What is SQL
+
+SQL is the abbreviation of Structure Query Language, and it is the standard language for dealing with Relational Database. SQL can be used to select, insert, search, update, and delete database records. 
+
+4. What are the difference between DDL, DML and DCL commands in SQL Server
+
+        DDL
+
+Data Definition Language (DDL) statements are used to define the database structure or schema. Some examples:
+CREATE - to create objects in the database
+ALTER - alters the structure of the database
+DROP - delete objects from the database
+TRUNCATE - remove all records from a table, including all spaces allocated for the records are removed
+COMMENT - add comments to the data dictionary
+RENAME - rename an object
+
+        DML
+
+Data Manipulation Language (DML) statements are used for managing data within schema objects. Some examples:
+SELECT - retrieve data from the a database
+INSERT - insert data into a table
+UPDATE - updates existing data within a table
+DELETE - deletes all records from a table, the space for the records remain
+MERGE - UPSERT operation (insert or update)
+CALL - call a PL/SQL or Java subprogram
+EXPLAIN PLAN - explain access path to data
+LOCK TABLE - control concurrency
+
+        DCL
+
+Data Control Language (DCL) statements. Some examples:
+GRANT - gives user's access privileges to database
+REVOKE - withdraw access privileges given with the GRANT command
+
+        TCL
+
+Transaction Control (TCL) statements are used to manage the changes made by DML statements. It allows statements to be grouped together into logical transactions.
+COMMIT - save work done
+SAVEPOINT - identify a point in a transaction to which you can later roll back
+ROLLBACK - restore database to original since the last COMMIT
+SET TRANSACTION - Change transaction options like isolation level and what rollback segment to use
+
+4. What is SQL Server
+
+SQL Server is a database software developed by the Microsoft organization like any other microsoft components. SQL Server is installed on Windows server operating system. 
+
+5. What is Management Studio Tool
+
+SQL Server Management Studio tool is used to perform operations such as storing, retrieving, and manipulating the data in SQL server. It contains a window called object explorer, which can be used to perform operations by following navigations either by clicking on the programs on the tool bar or using options in shortcut menu on each database objects like table, view, stored procedures. 
+
+6. How to Install SQL Server and SQL Management Studio Tool
+
+SQL server can be installed on Windows server operating system like Windows 2003, Windows 2008, or Windows 2012. To install, we simply execute the installation file from the disk on windows server and follow the installation instruction. 
+
+SQL Management Studio Tool can be installed both on Windows server and desktop operating system. Normally, we install SQL Management Studio Tool on desktop client by executing the installation file and selecting the Management Studio Tool option. 
